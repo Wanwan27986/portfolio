@@ -1,0 +1,138 @@
+.bg-blue{
+	background-color: #c7ecee;
+}
+.bg-soaring{
+	background-color: #95afc0;
+}
+.bg-naval{
+	background-color: #40739e;
+}
+.bg-good{
+	background-color: #3c6382;
+}
+.bg-middle{
+	background-color: #7ed6df;
+}
+.bg-twin{
+	background-color: #d1d8e0;
+}
+.bg-ship{
+	background-color: #2C3A47;
+}
+.bg-geenland{
+	background-color: #22a6b3;
+}
+.bg-anti{
+	background-color: #f1f2f6;
+}
+.bg-foest{
+	background-color: #0a3d62;
+}
+.bg-city{
+	background-color: #dfe4ea;
+}
+.bg-twin{
+	background-color: #ced6e0;
+}
+.bg-pure{
+	background-color: #6ab04c; 
+}
+.bg-down{
+	background-color: #4cd137;
+}
+p.exx {
+  color: #2d3436; 
+  line-height: 1.8;
+}
+.pfont{
+	font-size: 18px;
+}
+.lfont{
+	font-size: 13px;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+h1{
+  	text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+/* Grid image */
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.roww {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Content Educational*/
+/*.content {
+	display: block;
+  	background-color: white;
+  	padding: 10px;
+  	margin-left: auto;
+  	margin-right: auto;
+}*/
+
+.imgg {
+	  display: block;
+	  background-color: white;
+	  padding: 10px;
+	  margin-left: auto;
+	  margin-right: auto;
+}
+/* Activity */
+.mySlides {display:none;}
+
+
+
+
+
+
+
+
