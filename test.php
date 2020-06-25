@@ -88,42 +88,67 @@ for($row = 0; $row < count($student); $row++) {// แสดงแถวแต่
 echo "</table>";
 ?>
 
-abc
-
-<?php 
-//while
+<?php
 echo "<hr>";
-$student = array (
-  array("Volvo","M","(01/02/63)","N"),
-  array("BMW","L","(02/06/62)","Y"),
-  array("Saab","M","(03/07/62)","N"),
-  array("Land","L","(04/11/63)","N"),
-  array("Rover","M","(05/12/62)","Y")
-);
 echo "<table align=center><tr><th>ชื่อสกุล</th><th>เพศ</th><th>วันเดือนปีเกิด</th><th>สถานะการเรียน</th></tr>";
-$arrayLength = count($student);
-  while($arrayLength < 4){
-    echo
+$row = 0;
+while($row < count($student)){
+  echo "<tr>";
+  $col = 0;
+  while($col < count($student[$row])){
+    echo "<td>";
+    if($col == 1){
+      if($student[$row][$col] == "M"){
+        echo '<img src="images/man.png" alt="icon" />';
+      }else {
+        echo '<img src="images/women.png" alt="icon" />';
+      }
+    }elseif($col == 3){
+      if($student[$row][$col] == "Y"){
+        echo '<img src="images/true_1.png" alt="icon" />';
+      }else {
+        echo '<img src="images/flase.png" alt="icon" />';
+      }
+    }else {
+      echo $student[$row][$col];
+    }
+    echo "</td>";
+    $col++;
   }
-    
+  echo "</tr>";
+$row++;
+}
 echo "</table>";
 ?>
 
-<?php 
-$x = 1; 
-
-while($x <= 5) {
-  echo "The number is: $x <br>";
-  $x++;
-} 
-?>
 <?php
-$i=1;
-while($i<=5)
-{
-echo "The number is " . $i . "<br />";
-$i++;
-}
+echo "<hr>";
+echo "<table align=center><tr><th>ชื่อสกุล</th><th>เพศ</th><th>วันเดือนปีเกิด</th><th>สถานะการเรียน</th></tr>"; 
+  foreach ($student as $key => $value){
+      echo "<tr>";
+      foreach ($value as $key2 => $value2){
+          echo "<td>";
+          if($key2 == 1){
+            if($value2 == "M"){
+              echo '<img src="images/man.png" alt="icon" />';
+            }else{  
+              echo '<img src="images/women.png" alt="icon" />';
+            }
+
+          }elseif($key2 == 3){
+            if($value2 == "Y"){
+              echo '<img src="images/true_1.png" alt="icon" />';
+            }else{
+              echo '<img src="images/flase.png" alt="icon" />';
+            }
+          }else{
+            echo $value2;
+          }
+          echo "</td>";
+      }
+      echo "</tr>";
+  }
+  echo "</table>";  
 ?>
 </body>
 </html>
